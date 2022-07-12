@@ -3,4 +3,4 @@ This is a sample Calculator
 # Used Techs
 Html & CSS & JS
 
-![](preview.gif)
+![](preview.jpg)
