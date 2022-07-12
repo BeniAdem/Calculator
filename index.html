@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <form name="calculator">
+        <table>
+            <tr>
+                <th colspan="4"> <input type="text" name="screen" class="screen" readonly></th>
+            </tr>
+            <tr>
+                <td><button type="button" class="number" onclick="document.calculator.screen.value+='1'">1</button></td>
+                <td><button type="button" class="number" onclick="document.calculator.screen.value+='2'">2</button></td>
+                <td><button type="button" class="number" onclick="document.calculator.screen.value+='3'">3</button></td>
+                <td><button type="button" class="operations" onclick="document.calculator.screen.value+='+'">+</button></td>
+            </tr>
+            <tr>
+                <td><button type="button" class="number" onclick="document.calculator.screen.value+='4'">4</button></td>
+                <td><button type="button" class="number" onclick="document.calculator.screen.value+='5'">5</button></td>
+                <td><button type="button" class="number" onclick="document.calculator.screen.value+='6'">6</button></td>
+                <td><button type="button" class="operations" onclick="document.calculator.screen.value+='-'">-</button></td>
+            </tr>
+            <tr>
+                <td><button type="button" class="number" onclick="document.calculator.screen.value+='7'">7</button></td>
+                <td><button type="button" class="number" onclick="document.calculator.screen.value+='8'">8</button></td>
+                <td><button type="button" class="number" onclick="document.calculator.screen.value+='9'">9</button></td>
+                <td><button type="button" class="operations" onclick="document.calculator.screen.value+='*'">x</button></td>
+            </tr>
+            <tr>
+                <td><button type="button" class="number clear" onclick="document.calculator.screen.value=''">C</button></td>
+                <td><button type="button" class="number" onclick="document.calculator.screen.value+='0'">0</button></td>
+                <td><button type="button" class="number equal" onclick="document.calculator.screen.value=eval(document.calculator.screen.value)">=</button></td>
+                <td><button type="button" class="operations" onclick="document.calculator.screen.value+='/'">/</button></td>
+            </tr>
+
+        </table>
+        <tr>By BeniAdem</tr>
+    </form>
+</body>
+</html>
